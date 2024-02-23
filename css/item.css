@@ -1,0 +1,45 @@
+form {
+  display: table;
+}
+
+p {
+  display: table-row;
+  margin: auto;
+}
+
+label {
+  display: table-cell;
+  padding: 5px;
+  
+}
+
+.right {
+  text-align: center;
+  width: 100%;
+  display: inline;
+}
+
+input {
+  display: table-cell;
+  margin: 5px 10px 5px 10px;
+}
+
+textarea {
+  display: table-cell;
+  margin: 5px 10px 5px 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button {
+  margin: 5px;
+}

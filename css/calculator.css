@@ -1,0 +1,15 @@
+input, 
+button, 
+label, 
+form, 
+select {
+    margin: 5px;
+}
+
+.ingredient {
+    display: block;
+}
+
+select {
+    display: inline;
+}

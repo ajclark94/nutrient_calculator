@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nutrient Calculator</h1>
+      <h3 class="header"><a href="./item.html">Add/Edit an Item</a></h3>
+      <h3 class="header"><a href="./list.html">Item List</a></h3>
+      <h3 class="header">Item Calculator</h3>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Calculator</legend>
+        <div id="inputs">
+          <label for="new-name">Item Name:</label>
+          <input type="text" name="new-name" id="new-name">
+          <br/>
+          <label for="new-portion">Portion Size:</label>
+          <input type="number" name="new-portion" id="new-portion">
+          <select name="units" id="units">
+            <option value="select">--Select--</option>
+            <option value="#10 Scoop">#10 Scoop</option>
+            <option value="#12 Scoop">#12 Scoop</option>
+            <option value="#16 Scoop">#16 Scoop</option>
+            <option value="#20 Scoop">#20 Scoop</option>
+            <option value="#24 Scoop">#24 Scoop</option>
+            <option value="#40 Scoop">#40 Scoop</option>
+            <option value="#6 Scoop">#6 Scoop</option>
+            <option value="#8 Scoop">#8 Scoop</option>
+            <option value="1/10 Pie">1/10 Pie</option>
+            <option value="Bowl">Bowl</option>
+            <option value="Box">Box</option>
+            <option value="Cup">Cup</option>
+            <option value="Cups">Cups</option>
+            <option value="Cut 10 x 8 FP">Cut 10 x 8 FP</option>
+            <option value="Cut 12">Cut 12</option>
+            <option value="Cut 16">Cut 16</option>
+            <option value="Cut 3 x 2 HP">Cut 3 x 2 HP</option>
+            <option value="Cut 3 x 3 HP">Cut 3 x 3 HP</option>
+            <option value="Cut 3 x 4 HP">Cut 3 x 4 HP</option>
+            <option value="Cut 4">Cut 4</option>
+            <option value="Cut 4 x 12 FP">Cut 4 x 12 FP</option>
+            <option value="Cut 4 x 12 FS">Cut 4 x 12 FS</option>
+            <option value="Cut 4 x 3 HP">Cut 4 x 3 HP</option>
+            <option value="Cut 4 x 4 HP">Cut 4 x 4 HP</option>
+            <option value="Cut 4 x 6 FP">Cut 4 x 6 FP</option>
+            <option value="Cut 4 x 6 FS">Cut 4 x 6 FS</option>
+            <option value="Cut 4 x 6 HP">Cut 4 x 6 HP</option>
+            <option value="Cut 4 x 8 FP>Cut 4 x 8 FP"</option>
+            <option value="Cut 4 x 8 HS">Cut 4 x 8 HS</option>
+            <option value="Cut 5 x 8 HP">Cut 5 x 8 HP</option>
+            <option value="Cut 6">Cut 6</option>
+            <option value="Cut 6 x 4 FP">Cut 6 x 4 FP</option>
+            <option value="Cut 8">Cut 8</option>
+            <option value="Cut 8 x 10 FP">Cut 8 x 10 FP</option>
+            <option value="Cut 8 x 12 FP">Cut 8 x 12 FP</option>
+            <option value="Cut 8 x 4 FP">Cut 8 x 4 FP</option>
+            <option value="Cut 8 x 5 FP">Cut 8 x 5 FP</option>
+            <option value="Cut 8 x 5 HS">Cut 8 x 5 HS</option>
+            <option value="Cut 8 x 6 FP">Cut 8 x 6 FP</option>
+            <option value="Cut 8 x 8 FP">Cut 8 x 8 FP</option>
+            <option value="Cut 8 x 8 FS">Cut 8 x 8 FS</option>
+            <option value="Cut 9">Cut 9</option>
+            <option value="Each">Each</option>
+            <option value="fl oz">fl oz</option>
+            <option value="Gram">Gram</option>
+            <option value="grams">grams</option>
+            <option value="iu">iu</option>
+            <option value="kcal">kcal</option>
+            <option value="liter">liter</option>
+            <option value="mcg">mcg</option>
+            <option value="mg">mg</option>
+            <option value="mL">mL</option>
+            <option value="Ounce">Ounce</option>
+            <option value="Ounce Slice">Ounce Slice</option>
+            <option value="Ounce Slice (x2)">Ounce Slice (x2)</option>
+            <option value="Package">Package</option>
+            <option value="Packet">Packet</option>
+            <option value="PC">PC</option>
+            <option value="Pint">Pint</option>
+            <option value="Puck">Puck</option>
+            <option value="Slice">Slice</option>
+            <option value="Tbsp">Tbsp</option>
+            <option value="Teaspoon">Teaspoon</option>
+            <option value="Tortilla">Tortilla</option>
+          </select>
+          <br/>
+          <label for="count">Number of ingredients:</label>
+          <input type="number" name="count" id="count" min="0" max="10" />
+          <br/>
+          <button type="button" id="submit-btn">Submit</button>
+          <form id="calculator"></form>
+          <button id="calculate-btn">Calculate</button>
+        </div>
+        <div id="results">
+
+        </div>
+      </fieldset>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./js/calculator.js"></script>
+</html>
