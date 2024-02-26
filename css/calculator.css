@@ -13,3 +13,13 @@ select {
 select {
     display: inline;
 }
+
+#inputs {
+    display: inline;
+    width: 49%;
+}
+
+#results {
+    display: inline;
+    width: 49%;
+}
