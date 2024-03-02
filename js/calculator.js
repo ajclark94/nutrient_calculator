@@ -1,3 +1,5 @@
+//test comment
+
 const calculator= document.getElementById('calculator');
 const inputs = document.getElementById('inputs')
 const submitBtn = document.getElementById('submit-btn');
