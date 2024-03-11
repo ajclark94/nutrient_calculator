@@ -15,429 +15,380 @@
         <a href="./calculator.html">Item Calculator</a>
       </h3>
     </header>
-    <fieldset>
-      <legend>Nutrients</legend>
-      <form id="nutrients">
-        <p class="table-column">
-          <label for="item-name">Item Name</label>
-          <input type="text" name="item-name" id="item-name" />
-        </p>
-        <p class="table-column">
-          <label for="portion">Portion Size:</label>
-          <input type="number" name="portion" id="portion" />
-          <select name="units" id="units">
-            <option value="select">--Select--</option>
-            <option value="#10 Scoop">#10 Scoop</option>
-            <option value="#12 Scoop">#12 Scoop</option>
-            <option value="#16 Scoop">#16 Scoop</option>
-            <option value="#20 Scoop">#20 Scoop</option>
-            <option value="#24 Scoop">#24 Scoop</option>
-            <option value="#40 Scoop">#40 Scoop</option>
-            <option value="#6 Scoop">#6 Scoop</option>
-            <option value="#8 Scoop">#8 Scoop</option>
-            <option value="1/10 Pie">1/10 Pie</option>
-            <option value="Bowl">Bowl</option>
-            <option value="Box">Box</option>
-            <option value="Cup">Cup</option>
-            <option value="Cups">Cups</option>
-            <option value="Cut 10 x 8 FP">Cut 10 x 8 FP</option>
-            <option value="Cut 12">Cut 12</option>
-            <option value="Cut 16">Cut 16</option>
-            <option value="Cut 3 x 2 HP">Cut 3 x 2 HP</option>
-            <option value="Cut 3 x 3 HP">Cut 3 x 3 HP</option>
-            <option value="Cut 3 x 4 HP">Cut 3 x 4 HP</option>
-            <option value="Cut 4">Cut 4</option>
-            <option value="Cut 4 x 12 FP">Cut 4 x 12 FP</option>
-            <option value="Cut 4 x 12 FS">Cut 4 x 12 FS</option>
-            <option value="Cut 4 x 3 HP">Cut 4 x 3 HP</option>
-            <option value="Cut 4 x 4 HP">Cut 4 x 4 HP</option>
-            <option value="Cut 4 x 6 FP">Cut 4 x 6 FP</option>
-            <option value="Cut 4 x 6 FS">Cut 4 x 6 FS</option>
-            <option value="Cut 4 x 6 HP">Cut 4 x 6 HP</option>
-            <option value="Cut 4 x 8 FP>Cut 4 x 8 FP"</option>
-            <option value="Cut 4 x 8 HS">Cut 4 x 8 HS</option>
-            <option value="Cut 5 x 8 HP">Cut 5 x 8 HP</option>
-            <option value="Cut 6">Cut 6</option>
-            <option value="Cut 6 x 4 FP">Cut 6 x 4 FP</option>
-            <option value="Cut 8">Cut 8</option>
-            <option value="Cut 8 x 10 FP">Cut 8 x 10 FP</option>
-            <option value="Cut 8 x 12 FP">Cut 8 x 12 FP</option>
-            <option value="Cut 8 x 4 FP">Cut 8 x 4 FP</option>
-            <option value="Cut 8 x 5 FP">Cut 8 x 5 FP</option>
-            <option value="Cut 8 x 5 HS">Cut 8 x 5 HS</option>
-            <option value="Cut 8 x 6 FP">Cut 8 x 6 FP</option>
-            <option value="Cut 8 x 8 FP">Cut 8 x 8 FP</option>
-            <option value="Cut 8 x 8 FS">Cut 8 x 8 FS</option>
-            <option value="Cut 9">Cut 9</option>
-            <option value="Each">Each</option>
-            <option value="fl oz">fl oz</option>
-            <option value="Gram">Gram</option>
-            <option value="grams">grams</option>
-            <option value="iu">iu</option>
-            <option value="kcal">kcal</option>
-            <option value="liter">liter</option>
-            <option value="mcg">mcg</option>
-            <option value="mg">mg</option>
-            <option value="mL">mL</option>
-            <option value="Ounce">Ounce</option>
-            <option value="Ounce Slice">Ounce Slice</option>
-            <option value="Ounce Slice (x2)">Ounce Slice (x2)</option>
-            <option value="Package">Package</option>
-            <option value="Packet">Packet</option>
-            <option value="PC">PC</option>
-            <option value="Pint">Pint</option>
-            <option value="Puck">Puck</option>
-            <option value="Slice">Slice</option>
-            <option value="Tbsp">Tbsp</option>
-            <option value="Teaspoon">Teaspoon</option>
-            <option value="Tortilla">Tortilla</option>
-          </select>
-        </p>
-        <p class="table-column">
-          <label for="recipe-number">Recipe Number</label>
-          <input type="text" name="recipe-number" id="recipe-number" />
-        </p>
-        <p class="table-column">
-          <label for="calories">Calories</label>
-          <input
-            type="number"
-            name="calories"
-            id="calories"
-            class="nutrient"
-          />
-          <label for="calories" class="right">kcal</label>
-        </p>
-        <p class="table-column">
-          <label for="protein">Protein</label>
-          <input
-            type="number"
-            name="protein"
-            id="protein"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="carbohydrate">Carbohydrate</label>
-          <input
-            type="number"
-            name="carbohydrate"
-            id="carbohydrate"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="total-fat">Total Fat</label>
-          <input
-            type="number"
-            name="total-fat"
-            id="total-fat"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="saturated-fat">Saturated Fat</label>
-          <input
-            type="number"
-            name="saturated-fat"
-            id="saturated-fat"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="polyunsaturated-fat">Polyunsaturated Fat</label>
-          <input
-            type="number"
-            name="polyunsaturated-fat"
-            id="polyunsaturated-fat"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="trans-fat">Trans Fat</label>
-          <input
-            type="number"
-            name="trans-fat"
-            id="trans-fat"
-            class="nutrient"
-          />
-          grams
-        </p>
-        <p class="table-column">
-          <label for="cholesterol">Cholesterol</label>
-          <input
-            type="number"
-            name="cholesterol"
-            id="cholesterol"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="sodium">Sodium</label>
-          <input type="number" name="sodium" id="sodium" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="potassium">Potassium</label>
-          <input
-            type="number"
-            name="potassium"
-            id="potassium"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="phosphorus">Phosphorus</label>
-          <input
-            type="number"
-            name="phosphorus"
-            id="phosphorus"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="calcium">Calcium</label>
-          <input type="number" name="calcium" id="calcium" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="iron">Iron</label>
-          <input type="number" name="iron" id="iron" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="total-fiber">Total Fiber</label>
-          <input
-            type="number"
-            name="total-fiber"
-            id="total-fiber"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="sugar">Sugar</label>
-          <input type="number" name="sugar" id="sugar" class="nutrient" />grams
-        </p>
-        <p class="table-column">
-          <label for="fluid">Fluid</label>
-          <input type="number" name="fluid" id="fluid" class="nutrient" />mL
-        </p>
-        <p class="table-column">
-          <label for="vitamin-a">Vitamin A</label>
-          <input
-            type="number"
-            name="vitamin-a"
-            id="vitamin-a"
-            class="nutrient"
-          />iu
-        </p>
-        <p class="table-column">
-          <label for="vitamin-c">Vitamin C</label>
-          <input
-            type="number"
-            name="vitamin-c"
-            id="vitamin-c"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-b1">Vitamin B1</label>
-          <input
-            type="number"
-            name="vitamin-b1"
-            id="vitamin-b1"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-b2">Vitamin B2</label>
-          <input
-            type="number"
-            name="vitamin-b2"
-            id="vitamin-b2"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="niacin">Niacin</label>
-          <input type="number" name="niacin" id="niacin" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-b6">Vitamin B6</label>
-          <input
-            type="number"
-            name="vitamin-b6"
-            id="vitamin-b6"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="magnesium">Magnesium</label>
-          <input
-            type="number"
-            name="magnesium"
-            id="magnesium"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="zinc">Zinc</label>
-          <input type="number" name="zinc" id="zinc" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="copper">Copper</label>
-          <input type="number" name="copper" id="copper" class="nutrient" />mg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-e">Vitamin E</label>
-          <input
-            type="number"
-            name="vitamin-e"
-            id="vitamin-e"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="pantothenic-acid">Pantothenic Acid</label>
-          <input
-            type="number"
-            name="pantothenic-acid"
-            id="pantothenic-acid"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-b12">Vitamin B12</label>
-          <input
-            type="number"
-            name="vitamin-b12"
-            id="vitamin-b12"
-            class="nutrient"
-          />mcg
-        </p>
-        <p class="table-column">
-          <label for="folate">Folate</label>
-          <input type="number" name="folate" id="folate" class="nutrient" />mcg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-k">Vitamin K</label>
-          <input
-            type="number"
-            name="vitamin-k"
-            id="vitamin-k"
-            class="nutrient"
-          />mcg
-        </p>
-        <p class="table-column">
-          <label for="selenium">Selenium</label>
-          <input
-            type="number"
-            name="selenium"
-            id="selenium"
-            class="nutrient"
-          />mcg
-        </p>
-        <p class="table-column">
-          <label for="vitamin-d">Vitamin D</label>
-          <input
-            type="number"
-            name="vitamin-d"
-            id="vitamin-d"
-            class="nutrient"
-          />iu
-        </p>
-        <p class="table-column">
-          <label for="iodine">Iodine</label>
-          <input type="number" name="iodine" id="iodine" class="nutrient" />mcg
-        </p>
-        <p class="table-column">
-          <label for="chloride">Chloride</label>
-          <input
-            type="number"
-            name="chloride"
-            id="chloride"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="biotin">Biotin</label>
-          <input type="number" name="biotin" id="biotin" class="nutrient" />mcg
-        </p>
-        <p class="table-column">
-          <label for="fluoride">Fluoride</label>
-          <input
-            type="number"
-            name="fluoride"
-            id="fluoride"
-            class="nutrient"
-          />mcg
-        </p>
-        <p class="table-column">
-          <label for="choline">Choline</label>
-          <input
-            type="number"
-            name="choline"
-            id="choline"
-            class="nutrient"
-          />mcg
-        </p>
-        <p class="table-column">
-          <label for="linoleic-acid">Linoleic Acid</label>
-          <input
-            type="number"
-            name="linoleic-acid"
-            id="linoleic-acid"
-            class="nutrient"
-          />grams
-        </p>
-        <p class="table-column">
-          <label for="manganese">Manganese</label>
-          <input
-            type="number"
-            name="manganese"
-            id="manganese"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="molybdenum">Molybdenum</label>
-          <input
-            type="number"
-            name="molybdenum"
-            id="molybdenum"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="chromium">Chromium</label>
-          <input
-            type="number"
-            name="chromium"
-            id="chromium"
-            class="nutrient"
-          />mg
-        </p>
-        <p class="table-column">
-          <label for="carb-cnt">Carb Cnt</label>
-          <input
-            type="number"
-            name="carb-cnt"
-            id="carb-cnt"
-            class="nutrient"
-          />grams
-        </p>
-        <p>
-          <label for="ingredients-list" class="ingredients"
-            >Ingredients List</label
-          >
-          <textarea
-            name="ingredients-list"
-            id="ingredients-list"
-            cols="30"
-            rows="5"
-            placeholder="Input ingredients list separated by commas"
-          ></textarea>
-        </p>
-        <button type="button" id="submit-btn">Submit</button>
-        <button type="button" id="clear-btn">Clear</button>
-      </form>
-    </fieldset>
+    <form id="nutrients">
+      <label for="item-name">Item Name</label>
+      <input type="text" name="item-name" id="item-name" />
+      <br />
+      <label for="portion">Portion Size:</label>
+      <input type="number" name="portion" id="portion" />
+      <br />
+      <label for="units">Units</label>
+      <select name="units" id="units">
+        <option value="select">--Select--</option>
+        <option value="#10 Scoop">#10 Scoop</option>
+        <option value="#12 Scoop">#12 Scoop</option>
+        <option value="#16 Scoop">#16 Scoop</option>
+        <option value="#20 Scoop">#20 Scoop</option>
+        <option value="#24 Scoop">#24 Scoop</option>
+        <option value="#40 Scoop">#40 Scoop</option>
+        <option value="#6 Scoop">#6 Scoop</option>
+        <option value="#8 Scoop">#8 Scoop</option>
+        <option value="1/10 Pie">1/10 Pie</option>
+        <option value="Bowl">Bowl</option>
+        <option value="Box">Box</option>
+        <option value="Cup">Cup</option>
+        <option value="Cups">Cups</option>
+        <option value="Cut 10 x 8 FP">Cut 10 x 8 FP</option>
+        <option value="Cut 12">Cut 12</option>
+        <option value="Cut 16">Cut 16</option>
+        <option value="Cut 3 x 2 HP">Cut 3 x 2 HP</option>
+        <option value="Cut 3 x 3 HP">Cut 3 x 3 HP</option>
+        <option value="Cut 3 x 4 HP">Cut 3 x 4 HP</option>
+        <option value="Cut 4">Cut 4</option>
+        <option value="Cut 4 x 12 FP">Cut 4 x 12 FP</option>
+        <option value="Cut 4 x 12 FS">Cut 4 x 12 FS</option>
+        <option value="Cut 4 x 3 HP">Cut 4 x 3 HP</option>
+        <option value="Cut 4 x 4 HP">Cut 4 x 4 HP</option>
+        <option value="Cut 4 x 6 FP">Cut 4 x 6 FP</option>
+        <option value="Cut 4 x 6 FS">Cut 4 x 6 FS</option>
+        <option value="Cut 4 x 6 HP">Cut 4 x 6 HP</option>
+        <option value="Cut 4 x 8 FP>Cut 4 x 8 FP"</option>
+        <option value="Cut 4 x 8 HS">Cut 4 x 8 HS</option>
+        <option value="Cut 5 x 8 HP">Cut 5 x 8 HP</option>
+        <option value="Cut 6">Cut 6</option>
+        <option value="Cut 6 x 4 FP">Cut 6 x 4 FP</option>
+        <option value="Cut 8">Cut 8</option>
+        <option value="Cut 8 x 10 FP">Cut 8 x 10 FP</option>
+        <option value="Cut 8 x 12 FP">Cut 8 x 12 FP</option>
+        <option value="Cut 8 x 4 FP">Cut 8 x 4 FP</option>
+        <option value="Cut 8 x 5 FP">Cut 8 x 5 FP</option>
+        <option value="Cut 8 x 5 HS">Cut 8 x 5 HS</option>
+        <option value="Cut 8 x 6 FP">Cut 8 x 6 FP</option>
+        <option value="Cut 8 x 8 FP">Cut 8 x 8 FP</option>
+        <option value="Cut 8 x 8 FS">Cut 8 x 8 FS</option>
+        <option value="Cut 9">Cut 9</option>
+        <option value="Each">Each</option>
+        <option value="fl oz">fl oz</option>
+        <option value="Gram">Gram</option>
+        <option value="grams">grams</option>
+        <option value="iu">iu</option>
+        <option value="kcal">kcal</option>
+        <option value="liter">liter</option>
+        <option value="mcg">mcg</option>
+        <option value="mg">mg</option>
+        <option value="mL">mL</option>
+        <option value="Ounce">Ounce</option>
+        <option value="Ounce Slice">Ounce Slice</option>
+        <option value="Ounce Slice (x2)">Ounce Slice (x2)</option>
+        <option value="Package">Package</option>
+        <option value="Packet">Packet</option>
+        <option value="PC">PC</option>
+        <option value="Pint">Pint</option>
+        <option value="Puck">Puck</option>
+        <option value="Slice">Slice</option>
+        <option value="Tbsp">Tbsp</option>
+        <option value="Teaspoon">Teaspoon</option>
+        <option value="Tortilla">Tortilla</option>
+      </select>
+      <br />
+      <label for="recipe-number">Recipe Number</label>
+      <input type="text" name="recipe-number" id="recipe-number" />
+      <br />
+      <label for="calories">Calories</label>
+      <input
+        type="number"
+        name="calories"
+        id="calories"
+        class="nutrient"
+      />kcal
+      <br />
+      <label for="protein">Protein</label>
+      <input
+        type="number"
+        name="protein"
+        id="protein"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="carbohydrate">Carbohydrate</label>
+      <input
+        type="number"
+        name="carbohydrate"
+        id="carbohydrate"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="total-fat">Total Fat</label>
+      <input
+        type="number"
+        name="total-fat"
+        id="total-fat"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="saturated-fat">Saturated Fat</label>
+      <input
+        type="number"
+        name="saturated-fat"
+        id="saturated-fat"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="polyunsaturated-fat">Polyunsaturated Fat</label>
+      <input
+        type="number"
+        name="polyunsaturated-fat"
+        id="polyunsaturated-fat"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="trans-fat">Trans Fat</label>
+      <input
+        type="number"
+        name="trans-fat"
+        id="trans-fat"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="cholesterol">Cholesterol</label>
+      <input
+        type="number"
+        name="cholesterol"
+        id="cholesterol"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="sodium">Sodium</label>
+      <input type="number" name="sodium" id="sodium" class="nutrient" />mg
+      <br />
+      <label for="potassium">Potassium</label>
+      <input
+        type="number"
+        name="potassium"
+        id="potassium"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="phosphorus">Phosphorus</label>
+      <input
+        type="number"
+        name="phosphorus"
+        id="phosphorus"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="calcium">Calcium</label>
+      <input type="number" name="calcium" id="calcium" class="nutrient" />mg
+      <br />
+      <label for="iron">Iron</label>
+      <input type="number" name="iron" id="iron" class="nutrient" />mg
+      <br />
+      <label for="total-fiber">Total Fiber</label>
+      <input
+        type="number"
+        name="total-fiber"
+        id="total-fiber"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="sugar">Sugar</label>
+      <input type="number" name="sugar" id="sugar" class="nutrient" />grams
+      <br />
+      <label for="fluid">Fluid</label>
+      <input type="number" name="fluid" id="fluid" class="nutrient" />mL
+      <br />
+      <label for="vitamin-a">Vitamin A</label>
+      <input
+        type="number"
+        name="vitamin-a"
+        id="vitamin-a"
+        class="nutrient"
+      />iu
+      <br />
+      <label for="vitamin-c">Vitamin C</label>
+      <input
+        type="number"
+        name="vitamin-c"
+        id="vitamin-c"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="vitamin-b1">Vitamin B1</label>
+      <input
+        type="number"
+        name="vitamin-b1"
+        id="vitamin-b1"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="vitamin-b2">Vitamin B2</label>
+      <input
+        type="number"
+        name="vitamin-b2"
+        id="vitamin-b2"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="niacin">Niacin</label>
+      <input type="number" name="niacin" id="niacin" class="nutrient" />mg
+      <br />
+      <label for="vitamin-b6">Vitamin B6</label>
+      <input
+        type="number"
+        name="vitamin-b6"
+        id="vitamin-b6"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="magnesium">Magnesium</label>
+      <input
+        type="number"
+        name="magnesium"
+        id="magnesium"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="zinc">Zinc</label>
+      <input type="number" name="zinc" id="zinc" class="nutrient" />mg
+      <br />
+      <label for="copper">Copper</label>
+      <input type="number" name="copper" id="copper" class="nutrient" />mg
+      <br />
+      <label for="vitamin-e">Vitamin E</label>
+      <input
+        type="number"
+        name="vitamin-e"
+        id="vitamin-e"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="pantothenic-acid">Pantothenic Acid</label>
+      <input
+        type="number"
+        name="pantothenic-acid"
+        id="pantothenic-acid"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="vitamin-b12">Vitamin B12</label>
+      <input
+        type="number"
+        name="vitamin-b12"
+        id="vitamin-b12"
+        class="nutrient"
+      />mcg
+      <br />
+      <label for="folate">Folate</label>
+      <input type="number" name="folate" id="folate" class="nutrient" />mcg
+      <br />
+      <label for="vitamin-k">Vitamin K</label>
+      <input
+        type="number"
+        name="vitamin-k"
+        id="vitamin-k"
+        class="nutrient"
+      />mcg
+      <br />
+      <label for="selenium">Selenium</label>
+      <input
+        type="number"
+        name="selenium"
+        id="selenium"
+        class="nutrient"
+      />mcg
+      <br />
+      <label for="vitamin-d">Vitamin D</label>
+      <input
+        type="number"
+        name="vitamin-d"
+        id="vitamin-d"
+        class="nutrient"
+      />iu
+      <br />
+      <label for="iodine">Iodine</label>
+      <input type="number" name="iodine" id="iodine" class="nutrient" />mcg
+      <br />
+      <label for="chloride">Chloride</label>
+      <input
+        type="number"
+        name="chloride"
+        id="chloride"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="biotin">Biotin</label>
+      <input type="number" name="biotin" id="biotin" class="nutrient" />mcg
+      <br />
+      <label for="fluoride">Fluoride</label>
+      <input
+        type="number"
+        name="fluoride"
+        id="fluoride"
+        class="nutrient"
+      />mcg
+      <br />
+      <label for="choline">Choline</label>
+      <input
+        type="number"
+        name="choline"
+        id="choline"
+        class="nutrient"
+      />mcg
+      <br />
+      <label for="linoleic-acid">Linoleic Acid</label>
+      <input
+        type="number"
+        name="linoleic-acid"
+        id="linoleic-acid"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="manganese">Manganese</label>
+      <input
+        type="number"
+        name="manganese"
+        id="manganese"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="molybdenum">Molybdenum</label>
+      <input
+        type="number"
+        name="molybdenum"
+        id="molybdenum"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="chromium">Chromium</label>
+      <input
+        type="number"
+        name="chromium"
+        id="chromium"
+        class="nutrient"
+      />mg
+      <br />
+      <label for="carb-cnt">Carb Cnt</label>
+      <input
+        type="number"
+        name="carb-cnt"
+        id="carb-cnt"
+        class="nutrient"
+      />grams
+      <br />
+      <label for="ingredients-list" class="ingredients"
+        >Ingredients List</label
+      >
+      <textarea
+        name="ingredients-list"
+        id="ingredients-list"
+        cols="30"
+        rows="5"
+        placeholder="Input ingredients list separated by commas"
+      ></textarea>
+      <br />
+    <button type="button" id="submit-btn">Submit</button>
+    <button type="button" id="clear-btn">Clear</button>
+  </form>
     <script src="./js/item.js"></script>
   </body>
 </html>

@@ -1,45 +1,73 @@
-form {
-  display: table;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  display: table-row;
-  margin: auto;
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  display: table-cell;
-  padding: 5px;
-  
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 10px;
 }
 
-.right {
-  text-align: center;
-  width: 100%;
-  display: inline;
-}
-
-input {
-  display: table-cell;
-  margin: 5px 10px 5px 10px;
-}
-
+input,
+select,
 textarea {
-  display: table-cell;
-  margin: 5px 10px 5px 10px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+  width: 300px;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
-  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#clear-btn {
+  margin-left: 10px;
+}
+
+/* Add more styling as needed */
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  label {
+    width: 100%;
+    display: block;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
 }
