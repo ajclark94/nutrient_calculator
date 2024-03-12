@@ -17,6 +17,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  color: #333;
+  text-align: center;
+}
+
 a {
   color: #0066cc;
   text-decoration: none;
@@ -26,26 +31,13 @@ a:hover {
   text-decoration: underline;
 }
 
-#item-list {
-  width: 80%;
+p {
+  max-width: 600px;
   margin: 20px auto;
-  border-collapse: collapse;
+  padding: 10px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#item-list th,
-#item-list td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-#item-list th {
-  background-color: #4caf50;
-  color: white;
-}
-
 /* Add more styling as needed */
-

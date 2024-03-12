@@ -15,12 +15,20 @@
         <a href="./calculator.html">Item Calculator</a>
       </h3>
     </header>
-    <form id="nutrients">
+    <form action="/submit" method="post" id="item-form">
       <label for="item-name">Item Name</label>
-      <input type="text" name="item-name" id="item-name" />
+      <input 
+        type="text" 
+        name="item-name" 
+        id="item-name" 
+      />
       <br />
       <label for="portion">Portion Size:</label>
-      <input type="number" name="portion" id="portion" />
+      <input 
+        type="number" 
+        name="portion" 
+        id="portion" 
+      />
       <br />
       <label for="units">Units</label>
       <select name="units" id="units">
@@ -92,7 +100,11 @@
       </select>
       <br />
       <label for="recipe-number">Recipe Number</label>
-      <input type="text" name="recipe-number" id="recipe-number" />
+      <input 
+        type="text" 
+        name="recipe-number" 
+        id="recipe-number" 
+      />
       <br />
       <label for="calories">Calories</label>
       <input
@@ -100,6 +112,7 @@
         name="calories"
         id="calories"
         class="nutrient"
+        min="0"
       />kcal
       <br />
       <label for="protein">Protein</label>
@@ -108,6 +121,7 @@
         name="protein"
         id="protein"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="carbohydrate">Carbohydrate</label>
@@ -116,6 +130,7 @@
         name="carbohydrate"
         id="carbohydrate"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="total-fat">Total Fat</label>
@@ -124,6 +139,7 @@
         name="total-fat"
         id="total-fat"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="saturated-fat">Saturated Fat</label>
@@ -132,6 +148,7 @@
         name="saturated-fat"
         id="saturated-fat"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="polyunsaturated-fat">Polyunsaturated Fat</label>
@@ -140,6 +157,7 @@
         name="polyunsaturated-fat"
         id="polyunsaturated-fat"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="trans-fat">Trans Fat</label>
@@ -148,6 +166,7 @@
         name="trans-fat"
         id="trans-fat"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="cholesterol">Cholesterol</label>
@@ -156,10 +175,17 @@
         name="cholesterol"
         id="cholesterol"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="sodium">Sodium</label>
-      <input type="number" name="sodium" id="sodium" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="sodium" 
+        id="sodium" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="potassium">Potassium</label>
       <input
@@ -167,6 +193,7 @@
         name="potassium"
         id="potassium"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="phosphorus">Phosphorus</label>
@@ -175,13 +202,26 @@
         name="phosphorus"
         id="phosphorus"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="calcium">Calcium</label>
-      <input type="number" name="calcium" id="calcium" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="calcium" 
+        id="calcium" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="iron">Iron</label>
-      <input type="number" name="iron" id="iron" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="iron" 
+        id="iron" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="total-fiber">Total Fiber</label>
       <input
@@ -189,13 +229,26 @@
         name="total-fiber"
         id="total-fiber"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="sugar">Sugar</label>
-      <input type="number" name="sugar" id="sugar" class="nutrient" />grams
+      <input 
+        type="number" 
+        name="sugar" 
+        id="sugar" 
+        class="nutrient" 
+        min="0"
+      />grams
       <br />
       <label for="fluid">Fluid</label>
-      <input type="number" name="fluid" id="fluid" class="nutrient" />mL
+      <input 
+        type="number" 
+        name="fluid" 
+        id="fluid" 
+        class="nutrient" 
+        min="0"
+      />mL
       <br />
       <label for="vitamin-a">Vitamin A</label>
       <input
@@ -203,6 +256,7 @@
         name="vitamin-a"
         id="vitamin-a"
         class="nutrient"
+        min="0"
       />iu
       <br />
       <label for="vitamin-c">Vitamin C</label>
@@ -211,6 +265,7 @@
         name="vitamin-c"
         id="vitamin-c"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="vitamin-b1">Vitamin B1</label>
@@ -219,6 +274,7 @@
         name="vitamin-b1"
         id="vitamin-b1"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="vitamin-b2">Vitamin B2</label>
@@ -227,10 +283,17 @@
         name="vitamin-b2"
         id="vitamin-b2"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="niacin">Niacin</label>
-      <input type="number" name="niacin" id="niacin" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="niacin" 
+        id="niacin" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="vitamin-b6">Vitamin B6</label>
       <input
@@ -238,6 +301,7 @@
         name="vitamin-b6"
         id="vitamin-b6"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="magnesium">Magnesium</label>
@@ -246,13 +310,26 @@
         name="magnesium"
         id="magnesium"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="zinc">Zinc</label>
-      <input type="number" name="zinc" id="zinc" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="zinc" 
+        id="zinc" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="copper">Copper</label>
-      <input type="number" name="copper" id="copper" class="nutrient" />mg
+      <input 
+        type="number" 
+        name="copper" 
+        id="copper" 
+        class="nutrient" 
+        min="0"
+      />mg
       <br />
       <label for="vitamin-e">Vitamin E</label>
       <input
@@ -260,6 +337,7 @@
         name="vitamin-e"
         id="vitamin-e"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="pantothenic-acid">Pantothenic Acid</label>
@@ -268,6 +346,7 @@
         name="pantothenic-acid"
         id="pantothenic-acid"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="vitamin-b12">Vitamin B12</label>
@@ -276,10 +355,17 @@
         name="vitamin-b12"
         id="vitamin-b12"
         class="nutrient"
+        min="0"
       />mcg
       <br />
       <label for="folate">Folate</label>
-      <input type="number" name="folate" id="folate" class="nutrient" />mcg
+      <input 
+        type="number" 
+        name="folate" 
+        id="folate" 
+        class="nutrient" 
+        min="0"
+      />mcg
       <br />
       <label for="vitamin-k">Vitamin K</label>
       <input
@@ -287,6 +373,7 @@
         name="vitamin-k"
         id="vitamin-k"
         class="nutrient"
+        min="0"
       />mcg
       <br />
       <label for="selenium">Selenium</label>
@@ -295,6 +382,7 @@
         name="selenium"
         id="selenium"
         class="nutrient"
+        min="0"
       />mcg
       <br />
       <label for="vitamin-d">Vitamin D</label>
@@ -303,10 +391,17 @@
         name="vitamin-d"
         id="vitamin-d"
         class="nutrient"
+        min="0"
       />iu
       <br />
       <label for="iodine">Iodine</label>
-      <input type="number" name="iodine" id="iodine" class="nutrient" />mcg
+      <input 
+        type="number" 
+        name="iodine" 
+        id="iodine" 
+        class="nutrient" 
+        min="0"
+      />mcg
       <br />
       <label for="chloride">Chloride</label>
       <input
@@ -314,10 +409,17 @@
         name="chloride"
         id="chloride"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="biotin">Biotin</label>
-      <input type="number" name="biotin" id="biotin" class="nutrient" />mcg
+      <input 
+        type="number" 
+        name="biotin" 
+        id="biotin" 
+        class="nutrient" 
+        min="0"
+      />mcg
       <br />
       <label for="fluoride">Fluoride</label>
       <input
@@ -325,6 +427,7 @@
         name="fluoride"
         id="fluoride"
         class="nutrient"
+        min="0"
       />mcg
       <br />
       <label for="choline">Choline</label>
@@ -333,6 +436,7 @@
         name="choline"
         id="choline"
         class="nutrient"
+        min="0"
       />mcg
       <br />
       <label for="linoleic-acid">Linoleic Acid</label>
@@ -341,6 +445,7 @@
         name="linoleic-acid"
         id="linoleic-acid"
         class="nutrient"
+        min="0"
       />grams
       <br />
       <label for="manganese">Manganese</label>
@@ -349,6 +454,7 @@
         name="manganese"
         id="manganese"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="molybdenum">Molybdenum</label>
@@ -357,6 +463,7 @@
         name="molybdenum"
         id="molybdenum"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="chromium">Chromium</label>
@@ -365,6 +472,7 @@
         name="chromium"
         id="chromium"
         class="nutrient"
+        min="0"
       />mg
       <br />
       <label for="carb-cnt">Carb Cnt</label>
@@ -373,11 +481,12 @@
         name="carb-cnt"
         id="carb-cnt"
         class="nutrient"
+        min="0"
       />grams
       <br />
-      <label for="ingredients-list" class="ingredients"
-        >Ingredients List</label
-      >
+      <label for="ingredients-list" class="ingredients">
+        Ingredients List
+      </label>
       <textarea
         name="ingredients-list"
         id="ingredients-list"
@@ -386,7 +495,7 @@
         placeholder="Input ingredients list separated by commas"
       ></textarea>
       <br />
-    <button type="button" id="submit-btn">Submit</button>
+    <button type="submit" id="submit-btn">Submit</button>
     <button type="button" id="clear-btn">Clear</button>
   </form>
     <script src="./js/item.js"></script>
