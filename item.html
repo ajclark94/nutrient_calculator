@@ -15,12 +15,13 @@
         <a href="./calculator.html">Item Calculator</a>
       </h3>
     </header>
-    <form action="/submit" method="post" id="item-form">
+    <form action="http://localhost:3000" method="post" id="nutrients">
       <label for="item-name">Item Name</label>
       <input 
         type="text" 
         name="item-name" 
-        id="item-name" 
+        id="item-name"
+        required
       />
       <br />
       <label for="portion">Portion Size:</label>
@@ -28,6 +29,7 @@
         type="number" 
         name="portion" 
         id="portion" 
+        required
       />
       <br />
       <label for="units">Units</label>
@@ -104,6 +106,7 @@
         type="text" 
         name="recipe-number" 
         id="recipe-number" 
+        required
       />
       <br />
       <label for="calories">Calories</label>
@@ -113,6 +116,7 @@
         id="calories"
         class="nutrient"
         min="0"
+        required
       />kcal
       <br />
       <label for="protein">Protein</label>
@@ -122,6 +126,7 @@
         id="protein"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="carbohydrate">Carbohydrate</label>
@@ -131,6 +136,7 @@
         id="carbohydrate"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="total-fat">Total Fat</label>
@@ -140,6 +146,7 @@
         id="total-fat"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="saturated-fat">Saturated Fat</label>
@@ -149,6 +156,7 @@
         id="saturated-fat"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="polyunsaturated-fat">Polyunsaturated Fat</label>
@@ -158,6 +166,7 @@
         id="polyunsaturated-fat"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="trans-fat">Trans Fat</label>
@@ -167,6 +176,7 @@
         id="trans-fat"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="cholesterol">Cholesterol</label>
@@ -176,6 +186,7 @@
         id="cholesterol"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="sodium">Sodium</label>
@@ -185,6 +196,7 @@
         id="sodium" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="potassium">Potassium</label>
@@ -194,6 +206,7 @@
         id="potassium"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="phosphorus">Phosphorus</label>
@@ -203,6 +216,7 @@
         id="phosphorus"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="calcium">Calcium</label>
@@ -212,6 +226,7 @@
         id="calcium" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="iron">Iron</label>
@@ -221,6 +236,7 @@
         id="iron" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="total-fiber">Total Fiber</label>
@@ -230,6 +246,7 @@
         id="total-fiber"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="sugar">Sugar</label>
@@ -239,6 +256,7 @@
         id="sugar" 
         class="nutrient" 
         min="0"
+        required
       />grams
       <br />
       <label for="fluid">Fluid</label>
@@ -248,6 +266,7 @@
         id="fluid" 
         class="nutrient" 
         min="0"
+        required
       />mL
       <br />
       <label for="vitamin-a">Vitamin A</label>
@@ -257,6 +276,7 @@
         id="vitamin-a"
         class="nutrient"
         min="0"
+        required
       />iu
       <br />
       <label for="vitamin-c">Vitamin C</label>
@@ -266,6 +286,7 @@
         id="vitamin-c"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="vitamin-b1">Vitamin B1</label>
@@ -275,6 +296,7 @@
         id="vitamin-b1"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="vitamin-b2">Vitamin B2</label>
@@ -284,6 +306,7 @@
         id="vitamin-b2"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="niacin">Niacin</label>
@@ -293,6 +316,7 @@
         id="niacin" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="vitamin-b6">Vitamin B6</label>
@@ -302,6 +326,7 @@
         id="vitamin-b6"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="magnesium">Magnesium</label>
@@ -311,6 +336,7 @@
         id="magnesium"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="zinc">Zinc</label>
@@ -320,6 +346,7 @@
         id="zinc" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="copper">Copper</label>
@@ -329,6 +356,7 @@
         id="copper" 
         class="nutrient" 
         min="0"
+        required
       />mg
       <br />
       <label for="vitamin-e">Vitamin E</label>
@@ -338,6 +366,7 @@
         id="vitamin-e"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="pantothenic-acid">Pantothenic Acid</label>
@@ -347,6 +376,7 @@
         id="pantothenic-acid"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="vitamin-b12">Vitamin B12</label>
@@ -356,6 +386,7 @@
         id="vitamin-b12"
         class="nutrient"
         min="0"
+        required
       />mcg
       <br />
       <label for="folate">Folate</label>
@@ -365,6 +396,7 @@
         id="folate" 
         class="nutrient" 
         min="0"
+        required
       />mcg
       <br />
       <label for="vitamin-k">Vitamin K</label>
@@ -374,6 +406,7 @@
         id="vitamin-k"
         class="nutrient"
         min="0"
+        required
       />mcg
       <br />
       <label for="selenium">Selenium</label>
@@ -383,6 +416,7 @@
         id="selenium"
         class="nutrient"
         min="0"
+        required
       />mcg
       <br />
       <label for="vitamin-d">Vitamin D</label>
@@ -392,6 +426,7 @@
         id="vitamin-d"
         class="nutrient"
         min="0"
+        required
       />iu
       <br />
       <label for="iodine">Iodine</label>
@@ -401,6 +436,7 @@
         id="iodine" 
         class="nutrient" 
         min="0"
+        required
       />mcg
       <br />
       <label for="chloride">Chloride</label>
@@ -410,6 +446,7 @@
         id="chloride"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="biotin">Biotin</label>
@@ -419,6 +456,7 @@
         id="biotin" 
         class="nutrient" 
         min="0"
+        required
       />mcg
       <br />
       <label for="fluoride">Fluoride</label>
@@ -428,6 +466,7 @@
         id="fluoride"
         class="nutrient"
         min="0"
+        required
       />mcg
       <br />
       <label for="choline">Choline</label>
@@ -437,6 +476,7 @@
         id="choline"
         class="nutrient"
         min="0"
+        required
       />mcg
       <br />
       <label for="linoleic-acid">Linoleic Acid</label>
@@ -446,6 +486,7 @@
         id="linoleic-acid"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="manganese">Manganese</label>
@@ -455,6 +496,7 @@
         id="manganese"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="molybdenum">Molybdenum</label>
@@ -464,6 +506,7 @@
         id="molybdenum"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="chromium">Chromium</label>
@@ -473,6 +516,7 @@
         id="chromium"
         class="nutrient"
         min="0"
+        required
       />mg
       <br />
       <label for="carb-cnt">Carb Cnt</label>
@@ -482,6 +526,7 @@
         id="carb-cnt"
         class="nutrient"
         min="0"
+        required
       />grams
       <br />
       <label for="ingredients-list" class="ingredients">
